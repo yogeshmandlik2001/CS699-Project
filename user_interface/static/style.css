@@ -1,66 +1,77 @@
-/* Style for the main container */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
+    background-image: url('./stocks.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     background-color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
-/* Style for the search box container */
-form {
-    margin-top: 30px;
+#content-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
 }
-
-/* Style for the search boxes and labels */
-.radio-option {
+#graph-container {
+    margin-top: 40px;
+    width: 80%; /* Adjust the width as needed */
+}
+form {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 10px;
-}
-
-label {
-    font-size: 16px;
-    margin-left: 10px;
-}
-
-input[type="radio"] {
-    margin-right: 10px;
-}
-
-input[type="text"] {
-    padding: 10px;
-    width: 300px;
-    font-size: 16px;
-    margin: 5px 0;
-}
-
-/* Style for the comparison search boxes */
-#compare-stocks-search {
-    display: none;
-}
-
-/* Style for the submit button */
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #350de9;
-    color: #ffffff;
-    border: none;
-    cursor: pointer;
     margin-top: 10px;
 }
 
-button:hover {
-    background-color: #0056b3;
+
+
+label {
+    font-size: 18px;
+    margin-left: 15px;
+    color: #f0f0f0;
 }
 
-/* Style for search results */
-h2 {
-    margin-top: 30px;
+
+
+input[type="text"] {
+    padding: 12px;
+    width: 350px;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+
+button {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #7b5cff;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #5c3ca2;
+}
+.label-input-group input[type="radio"] {
+    margin-right: 0px;
+    margin-left: 0px;
+    color: #f0f0f0; /* Text color */
+}
+.label-input-group input[type="radio"]:checked {
+    border-color:white;
+}
+h1, h2 {
+    margin-top: 10px;
+    color: #ffffff;
 }
 
 ul {
@@ -69,6 +80,24 @@ ul {
 }
 
 li {
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #474a55;
+    padding-bottom: 10px;
+}
+
+/* Added styles for inline stock, start date, and end date */
+.label-input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.label-input-group label {
+    margin-right: 10px;
+}
+
+.label-input-group input {
+    width: 150px; /* Adjust the width as needed */
+    margin-right: 10px;
 }
